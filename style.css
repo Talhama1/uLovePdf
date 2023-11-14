@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(226, 6, 6, 0.874);
+    background-color: rgba(231, 8, 8, 0.874);
     overflow: hidden;
 }
 
@@ -59,7 +59,7 @@ body {
 .converter-container {
     text-align: center;
     margin-top: 20px;
-    background-color: rgb(203, 215, 211);
+    background-color: rgb(196, 232, 221);
     background-size: cover;
     padding: 165px;
     border-radius: 10px;

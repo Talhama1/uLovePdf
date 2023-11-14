@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>uLovePdf</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">
+            <img src="ULOV.jpg" alt="Logo">
+        </a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <div class="dropdown">
+            <a href="#" class="nav-item">Converter</a>
+            <div class="dropdown-content">
+                <a href="pdftojpg.html" class="sub-item" id="pdfToJpg">PDF to JPG</a>
+                <a href="jpg-to-png.html" class="sub-item" id="jpgToPng">JPG to PNG</a>
+                <a href="index.html" class="sub-item" id="jpgToPdf">JPG to PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="converter-container">
+        <input type="file" id="imageInput" accept=".jpg, .jpeg" />
+        <button onclick="convertJpgToPdf()">Convert to PDF</button>
+        <a id="downloadLink" style="display: none">Download PDF</a>
+        <img id="outputImage" alt="Converted Image">
+    </div>
+
+     <!-- JPG to PNG Converter Section -->
+     <div class="converter-container">
+        <input type="file" id="jpgInput" accept=".jpg, .jpeg" />
+        <button onclick="convertJpgToPng()">Convert to PNG</button>
+        <img id="outputImage" alt="Converted Image">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p style="display: inline-block;">&copy;copyright 2023 uLovePdf</p>
+        <p style="display: inline-block; margin-left: 100px;">Created by Talha</p>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>PDF to JPG - uLovePdf</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">
+            <img src="LLLLLLLLLLLL-removebg-preview.png" alt="Logo">
+        </a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <div class="dropdown">
+            <a href="#" class="nav-item">Converter</a>
+            <div class="dropdown-content">
+                <a href="pdf-to-jpg.html" class="sub-item" id="pdfToJpg">PDF to JPG</a>
+                <a href="#" class="sub-item" id="jpgToPng">JPG to PNG</a>
+                <a href="index.html" class="sub-item" id="jpgToPdf">JPG to PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="converter-container">
+        <input type="file" id="pdfInput" accept=".pdf" />
+        <button onclick="convertPdfToJpg()">Convert to JPG</button>
+        <a id="downloadLink" style="display: none">Download JPG</a>
+        <img id="outputImage" alt="Converted Image">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2023 uLovePdf</p>            
+    </div>
+
+    <script src="script.js"></script>
+    <script src="pdfToJpgScript.js"></script> <!-- Create a separate JavaScript file for this page -->
+</body>
+</html>
